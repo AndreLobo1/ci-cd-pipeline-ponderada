@@ -20,3 +20,10 @@ def test_parametrized_batch_volume(value):
     """30 casos parametrizados para aumentar volume de testes."""
     assert isinstance(value, int)
     assert value >= 0
+
+
+# Run 07 – Teste propositalmente quebrado
+def test_intentional_failure_for_experiment():
+    """Falha intencional para medir comportamento do pipeline com status failure."""
+    result = 1 + 1
+    assert result == 3, "Falha intencional do experimento (run 07/12)"
