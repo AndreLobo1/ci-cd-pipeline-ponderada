@@ -10,15 +10,6 @@ def test_parse_number_handles_ptbr_and_us_formats() -> None:
 
 
 
-# Run 02 – Teste lento (sleep artificial)
-import time as _time
-
-
-def test_slow_operation_simulates_heavy_computation():
-    """Simula operação pesada com sleep de 4 segundos."""
-    _time.sleep(4)
-    assert True
-
 
 # Run 03 – Muitos testes parametrizados
 import pytest as _pytest
