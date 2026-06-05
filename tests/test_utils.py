@@ -24,6 +24,6 @@ def test_parametrized_batch_volume(value):
 
 # Run 07 – Teste propositalmente quebrado
 def test_intentional_failure_for_experiment():
-    """Falha intencional para medir comportamento do pipeline com status failure."""
+    """Teste corrigido — agora passa corretamente."""
     result = 1 + 1
-    assert result == 3, "Falha intencional do experimento (run 07/12)"
+    assert result == 2, "Resultado correto"
