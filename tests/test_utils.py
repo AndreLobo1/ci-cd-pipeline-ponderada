@@ -27,3 +27,10 @@ def test_intentional_failure_for_experiment():
     """Teste corrigido — agora passa corretamente."""
     result = 1 + 1
     assert result == 2, "Resultado correto"
+
+
+# Run 12 – Alto volume de testes parametrizados
+@_pytest.mark.parametrize("n", list(range(50)))
+def test_high_volume_parametrized(n):
+    """50 casos para verificar relação quantidade×duração."""
+    assert n * 2 == n + n
