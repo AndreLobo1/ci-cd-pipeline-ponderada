@@ -54,3 +54,21 @@ jobs:
           path: |
             test-results.xml
             test-results.json
+
+  typecheck:
+    name: Type Check (mypy)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install mypy and stubs
+        run: pip install mypy pandas-stubs
+
+      - name: Run mypy (core only)
+        run: mypy core/ --ignore-missing-imports --no-strict-optional
+        continue-on-error: true
