@@ -187,7 +187,6 @@ def collect(client: GitHubClient) -> list[dict]:
         # Métricas de teste extraídas do nome/step dos jobs
         test_count = None
         test_failures = None
-        test_duration = None
 
         for job in jobs:
             job_name = job.get("name", "")

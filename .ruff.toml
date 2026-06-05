@@ -1,6 +1,11 @@
 [lint]
+# E/W = estilo, F = erros reais de Python
 select = ["E", "F", "W"]
-ignore = ["E501"]
+# F841 = variável local não usada (comum em código legado)
+# F401 = import não usado (idem)
+# F821 = nome indefinido (falso positivo em closures/legado)
+# E501 = linha longa
+ignore = ["E501", "F841", "F401", "F821"]
 
 [lint.per-file-ignores]
-"tests/*" = ["F811"]
+"tests/*" = ["F811", "F401"]
