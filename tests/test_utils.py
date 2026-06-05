@@ -8,3 +8,13 @@ def test_parse_number_handles_ptbr_and_us_formats() -> None:
     assert parse_number("R$ 1.234,00") == 1234.0
     assert parse_number("27,5") == 27.5
 
+
+
+# Run 02 – Teste lento (sleep artificial)
+import time as _time
+
+
+def test_slow_operation_simulates_heavy_computation():
+    """Simula operação pesada com sleep de 4 segundos."""
+    _time.sleep(4)
+    assert True
