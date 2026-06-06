@@ -32,9 +32,9 @@ def test_parametrized_batch_volume(value):
 # ---------------------------------------------------------------------------
 
 def test_intentional_failure_for_experiment():
-    """Teste corrigido — agora passa corretamente."""
+    """Falha intencional — run deve ter status failure."""
     result = 1 + 1
-    assert result == 2, "Resultado correto"
+    assert result == 3, "Falha intencional do experimento"
 
 
 # ---------------------------------------------------------------------------
