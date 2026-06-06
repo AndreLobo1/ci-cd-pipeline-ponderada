@@ -8,9 +8,6 @@ build/
 .env
 .credentials/
 artifacts/
-metrics.csv
-metrics_runs.json
-charts/*.png
 test-results.xml
 test-results.json
 .DS_Store

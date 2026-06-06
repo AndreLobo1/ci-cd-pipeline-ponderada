@@ -295,9 +295,9 @@ def write_csv(records: list[dict], path: str = "metrics.csv") -> None:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    global GITHUB_TOKEN, REPO_OWNER, REPO_NAME
+    global REPO_OWNER, REPO_NAME
 
-    GITHUB_TOKEN = GITHUB_TOKEN or _get_gh_token()
+    GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN") or _get_gh_token()
     if not GITHUB_TOKEN:
         print("ERRO: GITHUB_TOKEN não encontrado. Defina a variável de ambiente ou instale o gh CLI.")
         sys.exit(1)

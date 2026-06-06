@@ -1,0 +1,51 @@
+run_id,commit_sha,commit_message,status,workflow_duration,lead_time_seconds,job_name,job_status,job_duration,test_count,test_failures,test_avg_duration,artifact_size_bytes,timestamp
+27050822257,cbf4abc5b976,ci: parallel jobs — sem dependência entre lint e test,success,29.0,33.0,Type Check (mypy),success,14.0,,,,12713,2026-06-06T03:04:11Z
+27050822257,cbf4abc5b976,ci: parallel jobs — sem dependência entre lint e test,success,29.0,33.0,Tests (pytest),success,26.0,155,0,,12713,2026-06-06T03:04:11Z
+27050822257,cbf4abc5b976,ci: parallel jobs — sem dependência entre lint e test,success,29.0,33.0,Lint (ruff),success,8.0,,,,12713,2026-06-06T03:04:11Z
+27050792854,2e009b2dc10a,ci: sequential jobs — variação 6/6 test depende do lint (needs: [lint]),success,34.0,37.0,Lint (ruff),success,7.0,,,,12856,2026-06-06T03:02:49Z
+27050792854,2e009b2dc10a,ci: sequential jobs — variação 6/6 test depende do lint (needs: [lint]),success,34.0,37.0,Type Check (mypy),success,15.0,,,,12856,2026-06-06T03:02:49Z
+27050792854,2e009b2dc10a,ci: sequential jobs — variação 6/6 test depende do lint (needs: [lint]),success,34.0,37.0,Tests (pytest),success,22.0,155,0,,12856,2026-06-06T03:02:49Z
+27050790125,ad5e46adf306,fix: restore test — variação 5/6 pipeline verde após falha,success,23.0,27.0,Tests (pytest),success,21.0,155,0,,12898,2026-06-06T03:02:42Z
+27050790125,ad5e46adf306,fix: restore test — variação 5/6 pipeline verde após falha,success,23.0,27.0,Lint (ruff),success,6.0,,,,12898,2026-06-06T03:02:42Z
+27050790125,ad5e46adf306,fix: restore test — variação 5/6 pipeline verde após falha,success,23.0,27.0,Type Check (mypy),success,15.0,,,,12898,2026-06-06T03:02:42Z
+27050754565,5eef40fdfb47,test: intentional failure — variação 4/6 pipeline com status failure,failure,29.0,32.0,Lint (ruff),success,8.0,,,,13125,2026-06-06T03:01:01Z
+27050754565,5eef40fdfb47,test: intentional failure — variação 4/6 pipeline com status failure,failure,29.0,32.0,Tests (pytest),failure,25.0,155,1,,13125,2026-06-06T03:01:01Z
+27050754565,5eef40fdfb47,test: intentional failure — variação 4/6 pipeline com status failure,failure,29.0,32.0,Type Check (mypy),success,16.0,,,,13125,2026-06-06T03:01:01Z
+27050715299,9b680881930d,ci: re-enable pip cache — variação 3/6 comparar com run sem cache,success,25.0,28.0,Tests (pytest),success,23.0,155,0,,12663,2026-06-06T02:59:18Z
+27050715299,9b680881930d,ci: re-enable pip cache — variação 3/6 comparar com run sem cache,success,25.0,28.0,Type Check (mypy),success,18.0,,,,12663,2026-06-06T02:59:18Z
+27050715299,9b680881930d,ci: re-enable pip cache — variação 3/6 comparar com run sem cache,success,25.0,28.0,Lint (ruff),success,6.0,,,,12663,2026-06-06T02:59:18Z
+27050710152,6c073017e39d,ci: disable pip cache — variação 2/6 medir install sem cache,success,26.0,29.0,Lint (ruff),success,5.0,,,,12871,2026-06-06T02:59:02Z
+27050710152,6c073017e39d,ci: disable pip cache — variação 2/6 medir install sem cache,success,26.0,29.0,Tests (pytest),success,22.0,155,0,,12871,2026-06-06T02:59:02Z
+27050710152,6c073017e39d,ci: disable pip cache — variação 2/6 medir install sem cache,success,26.0,29.0,Type Check (mypy),success,18.0,,,,12871,2026-06-06T02:59:02Z
+27035271239,7989b9fe52c7,fix: move imports to top of test_utils.py — resolve E402 ruff error,success,26.0,30.0,Tests (pytest),success,22.0,155,0,,12830,2026-06-05T19:19:52Z
+27035271239,7989b9fe52c7,fix: move imports to top of test_utils.py — resolve E402 ruff error,success,26.0,30.0,Lint (ruff),success,10.0,,,,12830,2026-06-05T19:19:52Z
+27035271239,7989b9fe52c7,fix: move imports to top of test_utils.py — resolve E402 ruff error,success,26.0,30.0,Type Check (mypy),success,20.0,,,,12830,2026-06-05T19:19:52Z
+27035236714,4bd4ffb3f97c,"ci: fix ruff config — ignorar F841/F401 em código legado, focar erros reais",failure,26.0,29.0,Type Check (mypy),success,18.0,,,,12761,2026-06-05T19:19:06Z
+27035236714,4bd4ffb3f97c,"ci: fix ruff config — ignorar F841/F401 em código legado, focar erros reais",failure,26.0,29.0,Tests (pytest),success,22.0,155,0,,12761,2026-06-05T19:19:06Z
+27035236714,4bd4ffb3f97c,"ci: fix ruff config — ignorar F841/F401 em código legado, focar erros reais",failure,26.0,29.0,Lint (ruff),failure,9.0,,,,12761,2026-06-05T19:19:06Z
+27035203911,a55f648a0baf,test: add 50 more parametrized tests — alto volume para análise de escala,failure,24.0,27.0,Lint (ruff),failure,7.0,,,,12733,2026-06-05T19:18:23Z
+27035203911,a55f648a0baf,test: add 50 more parametrized tests — alto volume para análise de escala,failure,24.0,27.0,Type Check (mypy),success,16.0,,,,12733,2026-06-05T19:18:23Z
+27035203911,a55f648a0baf,test: add 50 more parametrized tests — alto volume para análise de escala,failure,24.0,27.0,Tests (pytest),success,21.0,155,0,,12733,2026-06-05T19:18:23Z
+27035196883,0c9b2d0143eb,ci: add mypy type check job — terceiro job em paralelo,failure,29.0,33.0,Type Check (mypy),success,15.0,,,,10230,2026-06-05T19:18:15Z
+27035196883,0c9b2d0143eb,ci: add mypy type check job — terceiro job em paralelo,failure,29.0,33.0,Lint (ruff),failure,6.0,,,,10230,2026-06-05T19:18:15Z
+27035196883,0c9b2d0143eb,ci: add mypy type check job — terceiro job em paralelo,failure,29.0,33.0,Tests (pytest),success,26.0,105,0,,10230,2026-06-05T19:18:15Z
+27035189516,5d2e43e1055b,ci: parallel jobs — lint e test sem dependência entre si,failure,25.0,28.0,Tests (pytest),success,22.0,105,0,,10157,2026-06-05T19:18:05Z
+27035189516,5d2e43e1055b,ci: parallel jobs — lint e test sem dependência entre si,failure,25.0,28.0,Lint (ruff),failure,10.0,,,,10157,2026-06-05T19:18:05Z
+27035182850,5ed8e919a205,ci: sequential jobs — test depende do lint (needs: [lint]),failure,10.0,13.0,Lint (ruff),failure,6.0,,,,0,2026-06-05T19:17:56Z
+27035182850,5ed8e919a205,ci: sequential jobs — test depende do lint (needs: [lint]),failure,10.0,13.0,Tests (pytest),skipped,0.0,,,,0,2026-06-05T19:17:56Z
+27035177879,924e3753ffd8,fix: correct intentional failing test — pipeline verde de volta,failure,33.0,37.0,Lint (ruff),failure,5.0,,,,10108,2026-06-05T19:17:50Z
+27035177879,924e3753ffd8,fix: correct intentional failing test — pipeline verde de volta,failure,33.0,37.0,Tests (pytest),success,30.0,105,0,,10108,2026-06-05T19:17:50Z
+27035169279,b7eb7e480553,test: introduce intentional failing test — run deve ter status failure,failure,24.0,28.0,Tests (pytest),failure,21.0,105,1,,10616,2026-06-05T19:17:38Z
+27035169279,b7eb7e480553,test: introduce intentional failing test — run deve ter status failure,failure,24.0,28.0,Lint (ruff),failure,9.0,,,,10616,2026-06-05T19:17:38Z
+27035163334,3e51893d0cc8,ci: re-enable pip cache — comparar tempo com run 05,failure,30.0,34.0,Lint (ruff),failure,6.0,,,,10161,2026-06-05T19:17:29Z
+27035163334,3e51893d0cc8,ci: re-enable pip cache — comparar tempo com run 05,failure,30.0,34.0,Tests (pytest),success,27.0,104,0,,10161,2026-06-05T19:17:29Z
+27035157434,12bc0ee428ed,ci: disable pip cache — medir impacto no tempo de instalação,failure,29.0,32.0,Lint (ruff),failure,8.0,,,,10093,2026-06-05T19:17:20Z
+27035157434,12bc0ee428ed,ci: disable pip cache — medir impacto no tempo de instalação,failure,29.0,32.0,Tests (pytest),success,25.0,104,0,,10093,2026-06-05T19:17:20Z
+27035152682,6f94c84feaf0,fix: remove slow test — baseline de desempenho restaurado,failure,25.0,30.0,Lint (ruff),failure,7.0,,,,10158,2026-06-05T19:17:14Z
+27035152682,6f94c84feaf0,fix: remove slow test — baseline de desempenho restaurado,failure,25.0,30.0,Tests (pytest),success,23.0,104,0,,10158,2026-06-05T19:17:14Z
+27035130233,b174d7f5dcf5,test: add 30 parametrized tests — aumento de volume,failure,31.0,34.0,Lint (ruff),failure,7.0,,,,10194,2026-06-05T19:16:44Z
+27035130233,b174d7f5dcf5,test: add 30 parametrized tests — aumento de volume,failure,31.0,34.0,Tests (pytest),success,28.0,105,0,,10194,2026-06-05T19:16:44Z
+27035125072,5c1a6a6976c6,test: add slow test — sleep 4s para simular operação pesada,failure,30.0,34.0,Lint (ruff),failure,5.0,,,,8493,2026-06-05T19:16:37Z
+27035125072,5c1a6a6976c6,test: add slow test — sleep 4s para simular operação pesada,failure,30.0,34.0,Tests (pytest),success,27.0,75,0,,8493,2026-06-05T19:16:37Z
+27035120468,6a927d2d11dd,chore: baseline — pipeline inicial com 74 testes passando,failure,31.0,45.0,Lint (ruff),failure,8.0,,,,8306,2026-06-05T19:16:31Z
+27035120468,6a927d2d11dd,chore: baseline — pipeline inicial com 74 testes passando,failure,31.0,45.0,Tests (pytest),success,27.0,74,0,,8306,2026-06-05T19:16:31Z
